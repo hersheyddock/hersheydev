@@ -1,0 +1,457 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Q31. 문자열 합치기\n",
+    "아래 코드의 실행 결과를 예상해보세요"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "34\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = \"3\"\n",
+    "b = \"4\"\n",
+    "print(a + b)\n",
+    "\n",
+    "# 34가 나옵니다"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Q32. 문자열 곱하기\n",
+    "아래 코드의 실행 결과를 예상해보세요"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "hihihi\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"hi\"*3)\n",
+    "\n",
+    "#hihihi"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Q33. 문자열 곱하기\n",
+    "화면에 '-'를 80개 출력하세요"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "--------------------------------------------------------------------------------\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"-\"*80)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Q34. 문자열 곱하기\n",
+    "변수에 다음과 같은 문자열이 바인딩되어 있습니다.\n",
+    "\n",
+    "t1 = 'python'\n",
+    "\n",
+    "t2 = 'java'\n",
+    "\n",
+    "변수에 문자열 더하기와 문자열 곱하기를 사용해서 아래와 같이 출력해보세요.\n",
+    "\n",
+    "=> python java python java python java python java"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "python java python java python java python java \n"
+     ]
+    }
+   ],
+   "source": [
+    "t1 = \"python\"\n",
+    "t2 = \"java\"\n",
+    "\n",
+    "print((\"python \"+\"java \")*4)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Q35. 문자열 출력\n",
+    "변수에 다음과 같이 문자열과 정수가 바인딩되어 있을 때 % formatting을 사용해서 다음과 같이 출력해보세요."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "name1 = \"김민수\" \n",
+    "age1 = 10\n",
+    "name2 = \"이철희\"\n",
+    "age2 = 13"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "이름: 김민수 나이: 10\n",
+    "\n",
+    "이름: 이철희 나이: 13"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "SyntaxError",
+     "evalue": "invalid syntax (<ipython-input-8-86ba1e6bd6a2>, line 1)",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;36m  File \u001b[0;32m\"<ipython-input-8-86ba1e6bd6a2>\"\u001b[0;36m, line \u001b[0;32m1\u001b[0m\n\u001b[0;31m    print(\"%이름:\"name1, \"%나이:\"age1).%formatting\u001b[0m\n\u001b[0m                    ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m invalid syntax\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"%이름:\"name1, \"%나이:\"age1).%formatting\n",
+    "print(\"%이름:\"name2, \"%나이:\":age2).%formatting\n",
+    "\n",
+    "#땡"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "print 포맷팅에서 %s는 문자열 데이터 타입의 값을 %d는 정수형 데이터 타입 값의 출력을 의미합니다."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "이름: 김민수 나이: 10\n",
+      "이름: 이철희 나이: 13\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"이름: %s 나이: %d\" %(name1, age1))\n",
+    "print(\"이름: %s 나이: %d\" %(name2, age2))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Q36. 문자열 출력\n",
+    "문자열의 format() 메서드를 사용해서 035번 문제를 다시 풀어보세요"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "이름: 김민수 나이: 10\n",
+      "이름: 이철희 나이: 13\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"이름: %s 나이: %d\" %(format(name1), age1))\n",
+    "print(\"이름: %s 나이: %d\" %(format(name2), age2))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "이름: 김민수 나이: 10\n",
+      "이름: 이철희 나이: 13\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"이름: {} 나이: {}\".format(name1, age1))\n",
+    "print(\"이름: {} 나이: {}\".format(name2, age2))\n",
+    "\n",
+    "#위 코드보다 이 코드가 훨씬 직관적 !"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Q37. 문자열 출력\n",
+    "파이썬 3.6부터 지원하는 f-string을 사용해서 035번 문제를 다시 풀어보세요.\n",
+    "\n",
+    "f-string은 문자열 앞에 f가 붙은 형태입니다. f-string을 사용하면 {변수}와 같은 형태로 문자열 사이에 타입과 상관없이 값을 출력할 수 있습니다."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "이름: 김민수, 나이: 10\n",
+      "이름: 이철희, 나이: 13\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(f\"이름: {name1}, 나이: {age1}\")\n",
+    "print(f\"이름: {name2}, 나이: {age2}\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Q38. 컴마 제거하기\n",
+    "삼성전자의 상장주식수가 다음과 같습니다. 컴마를 제거한 후 이를 정수 타입으로 변환해보세요."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 28,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "int"
+      ]
+     },
+     "execution_count": 28,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "상장주식수 = \"5,969,782,550\"\n",
+    "\n",
+    "상장주식수 = 상장주식수.replace(\",\",\"\") \n",
+    "#컴마가 \"\"안에 있기 때문에 string으로 처리되고 이에 따라 replace문 사용 가능\n",
+    "\n",
+    "type(int(상장주식수))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Q39. 문자열 슬라이싱\n",
+    "다음과 같은 문자열에서 '2020/03'만 출력하세요."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 39,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "분기 = \"2020/03(E) (IFRS연결)\""
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 32,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['2020/03(E) (IFRS연결)']"
+      ]
+     },
+     "execution_count": 32,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "list = [분기]\n",
+    "len(list)\n",
+    "list"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 45,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "분기2 = 분기.split(\"(E) (IFRS연결)\")\n",
+    "# 자료구조가 리스트로 바뀌고 1개의 분기점을 기준으로 나머지 하나의 토막이 리스트에 저장됨"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 46,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'2020/03'"
+      ]
+     },
+     "execution_count": 46,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# 따라서, 리스트에서 인덱싱을 쉽게 할 수 있음\n",
+    "분기2[0]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 48,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "2020/03\n"
+     ]
+    }
+   ],
+   "source": [
+    "## 모범답안 : string에서도 슬라이싱 가능;;\n",
+    "\n",
+    "print(분기[:7])"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Q40. Strip 메서드\n",
+    "문자열의 좌우의 공백이 있을 때 이를 제거해보세요.\n",
+    "\n",
+    "data = \"     삼성전자    \""
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 49,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "data = \"  삼성전자   \""
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 50,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'삼성전자'"
+      ]
+     },
+     "execution_count": 50,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "data.strip()\n",
+    "# 객체지향 프로그래밍에서 메서드는 항상 ()와 함께 써야하는 함수라는 점을 유념 !"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.7.2"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
