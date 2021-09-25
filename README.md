@@ -1,4 +1,4 @@
-# data_analysis_portfolio
+# python_portfolio
 
 Python 코드를 적어둔 포트폴리오 repo입니다.
 
