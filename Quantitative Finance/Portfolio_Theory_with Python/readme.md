@@ -1,5 +1,5 @@
 ## 파이썬으로 배우는 포트폴리오 (곽승주 저) 
-<img src="https://user-images.githubusercontent.com/36656801/139540628-c7d7f1c3-af02-42fe-9bb1-0f66ead3b2c3.png" width="300" height="200">
+<img src="https://user-images.githubusercontent.com/36656801/139540628-c7d7f1c3-af02-42fe-9bb1-0f66ead3b2c3.png" width="80%" height="80%">
 #### 2021.10.31
 [- Chap 1. 파이썬과 기초 재무지식](url)<br/>
 [- Chap 2. 투자와 자산배분](url)<br/>
