@@ -1,6 +1,6 @@
 ## 파이썬으로 배우는 포트폴리오 (곽승주 저) 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/36656801/139540628-c7d7f1c3-af02-42fe-9bb1-0f66ead3b2c3.png" width="50%" height="50%">
+<img src="https://user-images.githubusercontent.com/36656801/139540628-c7d7f1c3-af02-42fe-9bb1-0f66ead3b2c3.png" width="40%" height="40%">
 </p>
 
 <br/>
