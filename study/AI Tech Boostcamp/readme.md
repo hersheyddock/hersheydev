@@ -1,4 +1,4 @@
-### Naver Boostcamp AI Tech 3기 스터디 자료
+### Naver Boostcamp AI Tech 3기 Pre-Course 스터디 자료
 
 * [Day 1](url)
 * [Day 2](url)
