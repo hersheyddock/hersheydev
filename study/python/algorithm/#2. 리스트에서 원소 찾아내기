@@ -1,0 +1,9 @@
+def solution(L, x):
+    res = [i for i,j in enumerate(L) if j == x]
+    if x not in L:
+        return [-1]
+    else:
+        return res
+
+# 계속 인덱스 하나만 반환되는 문제가 있었는데, 이는 index() 메서드의 특징임. 
+# 탐색 대상이 되는 원소의 인덱스를 딱 한번만 찾아주고 끝냄
