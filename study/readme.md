@@ -1,5 +1,5 @@
-## Repo for math, statistics, python study
+## Repo for Studying Log
 
 * math : linear algebra, calculus, optimization
 * statistics : mathematical statistics
-* python 
+* programming : python, C, smart contract, etc 
