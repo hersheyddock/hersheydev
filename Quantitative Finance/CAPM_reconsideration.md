@@ -1,5 +1,7 @@
 > 본 포스팅은 기업재무론(Corporate Finance)에서 배우는 CAPM(Capital Asset Pricing Model)을 좀 더 깊게 이해하고자 정리한 공부 포스팅입니다 :)
 
+원문 link : https://velog.io/@hersheythings/Finance-CAPM%EA%B3%BC-%EC%84%A0%ED%98%95%ED%9A%8C%EA%B7%80%EB%AA%A8%ED%98%95-1.-CAPM%EC%97%90-%EB%8C%80%ED%95%98%EC%97%AC
+
 ----
 ## CAPM에 대하여
 ### CAPM(Capital Asset Pricing Model)
