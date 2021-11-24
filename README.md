@@ -1,4 +1,4 @@
-# Portfolio (Studying Log)
+# AI Portfolio (Studying Log)
 AI 관련 학습 기록을 적어둔 포트폴리오 repo입니다.
 
 ### Computer Science
@@ -10,5 +10,6 @@ AI 관련 학습 기록을 적어둔 포트폴리오 repo입니다.
 * 수리통계학
 * 최적화
 
-#### Personal Blog
-* https://velog.io/@hersheythings
+#### Personal Websites
+* Blog : https://velog.io/@hersheythings
+* Insta : https://www.instagram.com/hersheystudying
