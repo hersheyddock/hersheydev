@@ -1,4 +1,14 @@
-# Portfolio
-Computer Science, Data Science 관련 학습 내용을 적어둔 포트폴리오 repo입니다. 
+# Portfolio (Studying Log)
+AI 관련 학습 기록을 적어둔 포트폴리오 repo입니다.
 
-선형대수학, 통계학, 미적분학 등 수학/통계 분야를 공부하며 실습하는 python 코드들도 수시로 모아둡니다 :)
+### Computer Science
+* 자료구조/알고리즘
+* 객체지향 프로그래밍(OOP)
+
+### Math & Stats
+* 선형대수학
+* 수리통계학
+* 최적화
+
+#### Personal Blog
+* https://velog.io/@hersheythings
