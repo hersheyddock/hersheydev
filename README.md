@@ -4,6 +4,7 @@ AI 관련 학습 기록을 적어둔 포트폴리오 repo입니다.
 ### Computer Science
 * 자료구조/알고리즘
 * 객체지향 프로그래밍(OOP)
+* 인공지능
 
 ### Math & Stats
 * 선형대수학
