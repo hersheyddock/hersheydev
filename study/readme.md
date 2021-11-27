@@ -2,4 +2,4 @@
 
 * math : linear algebra, calculus, optimization
 * statistics : mathematical statistics
-* programming : python, C, smart contract, etc 
+* programming : python, smart contract, etc 
