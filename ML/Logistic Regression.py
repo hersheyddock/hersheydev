@@ -6,7 +6,7 @@ from sklearn.datasets import load_digits
 from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
 
-# 이미지, 라벨 총 2가지 데이터 유형이 
+# 이미지, 라벨 총 2가지 데이터 유형
 digits = load_digits(n_class=2) # digits data load
 print("Image Data Shape", digits.data.shape) # 350: the number of images, 64: shape (8 by 8 image)
 print("Label Data Shape", digits.target.shape)
@@ -41,7 +41,6 @@ def sigmoid(x):
     return 1 / (1 + np.exp(-x))
 
 def compute_cost(x_train,y_train,beta_hat):
-  # Lecture11 20p
   m = len(y_train)
   epsilon = 1e-5
   cost = 0
@@ -53,7 +52,6 @@ def compute_cost(x_train,y_train,beta_hat):
   return cost 
 
 def gradient_descent(x_train, y_train, params, learning_rate, iterations):
-  # Lecture11 22p
     m = len(y_train)
     cost_history = np.zeros((iterations,1))
     for i in range(iterations):
