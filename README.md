@@ -16,7 +16,7 @@ Data 관련 학습 기록을 적어둔 포트폴리오 repo입니다.
 * 최적화
 
 ### else
-* 금융 및 경제
+* 금융 및 경제 (계량투자, 계량경제)
 
 #### Personal Websites
 * Blog : https://velog.io/@hersheythings
