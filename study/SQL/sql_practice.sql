@@ -1,7 +1,9 @@
 #Q1. 2021-08 한달에 대해 일별로 "APP_OPEN" 이벤트 수, "APP_OPEN" 이벤트를 발생시킨 유저 수, 유저 당 평균 "APP_OPEN" 이벤트 수를 세는 SQL을 작성하라.
 
 select
-  count(case when event_name = "APP_OPEN" then 1 end) as "app open" count(user_id case when event_name = "APP_OPEN" then 1 end) as "users" count("app open" / "users")
+  count(case when event_name = "APP_OPEN" then 1 end) as "app open" 
+  count(user_id case when event_name = "APP_OPEN" then 1 end) as "users" 
+  count("app open" / "users")
   date_format(from_unixtime(event_at), "%yyyy %mm %dd") as "event_time"
 
 from event
