@@ -1,5 +1,5 @@
 # Data Portfolio (Studying Log)
-Data 관련 학습 기록을 적어둔 포트폴리오 repo입니다.
+Data, CS 관련 학습 기록을 적어둔 포트폴리오 repo입니다.
 
 ### Computer Science
 * 자료구조/알고리즘
