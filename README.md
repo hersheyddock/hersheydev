@@ -1,12 +1,12 @@
-# Data Portfolio (Studying Log)
-Data, CS 관련 학습 기록을 적어둔 포트폴리오 repo입니다.
+# Dev Portfolio (Studying Log)
+CS, Data 관련 학습 기록을 적어둔 포트폴리오 repo입니다.
 
 ### Computer Science
 * 자료구조/알고리즘
 * 데이터베이스 (TBU)
 * 운영체제 (TBU)
 * 네트워크 (TBU)
-* 
+* 블록체인
 * 인공지능
 
 ### Math & Stats
