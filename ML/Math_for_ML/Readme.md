@@ -1,4 +1,4 @@
-#[Mathematics for Machine Learning](https://mml-book.github.io/)
+# [Mathematics for Machine Learning](https://mml-book.github.io/)
 ------
 ## Table of Contents
 ### Part I: Mathematical Foundations
