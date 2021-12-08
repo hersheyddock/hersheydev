@@ -4,10 +4,6 @@
 ### Computer Science
 * 자료구조/알고리즘
 * 객체지향 프로그래밍
-* 데이터베이스 (TBU)
-* 운영체제 (TBU)
-* 네트워크 (TBU)
-* 블록체인
 * 인공지능
 
 ### Math & Stats
@@ -18,6 +14,7 @@
 
 ### else
 * 금융 및 경제 (계량투자, 계량경제)
+* 블록체인 (Ethereum)
 
 #### Personal Websites
 * Blog : https://velog.io/@hersheythings
