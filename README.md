@@ -1,8 +1,6 @@
 ## Dev Portfolio (Studying Log, since 2021)
 개발, 데이터 분석 관련 학습 기록을 적어둔 포트폴리오 repo입니다. 
 
-Applied Machine Learning, Econometrics 등 다양한 통계 분석 방법론을 학습하고 있습니다.
-
 ### Computer Science
 * 자료구조/알고리즘
 * 객체지향 프로그래밍
