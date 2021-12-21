@@ -1,5 +1,5 @@
 ## Dev Portfolio (Studying Log, since 2021)
-개발, 데이터 분석 관련 학습 기록을 적어둔 포트폴리오 repo입니다. 
+개발, 데이터 관련 학습 기록을 적어둔 포트폴리오 repo입니다. 
 
 ### Computer Science
 * 자료구조/알고리즘
