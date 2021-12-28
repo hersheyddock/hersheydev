@@ -18,4 +18,4 @@
 
 #### Personal Websites
 * Blog : https://velog.io/@hersheythings
-* Insta : https://www.instagram.com/hersheystudying
+* Insta : https://www.instagram.com/hersheydevlog
