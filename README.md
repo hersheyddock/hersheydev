@@ -1,4 +1,4 @@
-## Dev Portfolio (since 2021)
+## Dev Study Log (since 2021)
 개발, 데이터 관련 학습 기록을 적어둔 포트폴리오 repo입니다. 
 
 ### Computer Science
@@ -19,3 +19,4 @@
 #### Personal Websites
 * Blog : https://velog.io/@hersheythings
 * Insta : https://www.instagram.com/hersheydevlog
+* 향후 CS, Stats, Finance 관련 공부 지속 예정...
