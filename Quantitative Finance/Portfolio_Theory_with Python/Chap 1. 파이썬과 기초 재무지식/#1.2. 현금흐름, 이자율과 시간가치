@@ -1,0 +1,357 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## 1.2. 현금흐름, 이자율과 시간가치"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 단리와 복리"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "- 복리 : $ y = x_0 \\times (1+r)^n$  \n",
+    "- 단리 : $ y = x_0 \\times (1+r\\times n)$"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## 단리 이자 계산\n",
+    "- 원금 = 1,000만원\n",
+    "- 연 이율 = 5%\n",
+    "- 기간 = 1년\n",
+    "- 1년 후 인출액 = 1,000만원 * (1+0.05*1년) = 10,500,000원"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "단리 기준 인출액은 10500000원 입니다\n"
+     ]
+    }
+   ],
+   "source": [
+    "x = 10**7\n",
+    "n = 1\n",
+    "r = 5/100\n",
+    "s_simple = round(x*(1+r*n))\n",
+    "\n",
+    "print(f\"단리 기준 인출액은 {s_simple}원 입니다\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "10500000"
+      ]
+     },
+     "execution_count": 11,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# 월 기준 이자로 1년치 계산\n",
+    "s_simple_month = round(x*(1+r*(n/12)*12))\n",
+    "s_simple_month"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "\u001b[33mDEPRECATION: Configuring installation scheme with distutils config files is deprecated and will no longer work in the near future. If you are using a Homebrew or Linuxbrew Python, please see discussion at https://github.com/Homebrew/homebrew-core/issues/76621\u001b[0m\n",
+      "Collecting numpy-financial\n",
+      "  Downloading numpy_financial-1.0.0-py3-none-any.whl (14 kB)\n",
+      "Requirement already satisfied: numpy>=1.15 in /usr/local/lib/python3.7/site-packages (from numpy-financial) (1.19.4)\n",
+      "Installing collected packages: numpy-financial\n",
+      "\u001b[33mDEPRECATION: Configuring installation scheme with distutils config files is deprecated and will no longer work in the near future. If you are using a Homebrew or Linuxbrew Python, please see discussion at https://github.com/Homebrew/homebrew-core/issues/76621\u001b[0m\n",
+      "Successfully installed numpy-financial-1.0.0\n",
+      "\u001b[33mWARNING: You are using pip version 21.3.1; however, version 22.2.2 is available.\n",
+      "You should consider upgrading via the '/usr/local/opt/python/bin/python3.7 -m pip install --upgrade pip' command.\u001b[0m\n",
+      "Note: you may need to restart the kernel to use updated packages.\n"
+     ]
+    }
+   ],
+   "source": [
+    "pip install numpy-financial"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 32,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "-10500000.0"
+      ]
+     },
+     "execution_count": 32,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "import numpy_financial as npf\n",
+    "\n",
+    "s_simple = npf.fv(r,n,0,x)\n",
+    "s_simple"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## 복리 이자 계산\n",
+    "- 원금 = 1,000만원\n",
+    "- 연 이율 = 5%\n",
+    "- 기간 = 1년\n",
+    "- 1년 후 인출액 = 1,000만원 * (1+0.05)^1 = 10,500,000원"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 33,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "10500000.0"
+      ]
+     },
+     "execution_count": 33,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "s_compound = x*(1+r)**n\n",
+    "s_compound"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "복리 중에는 연속복리의 개념이 있다. 복리 계산에서 복리 횟수를 무한정 늘려놓은 것이 연속복리다. \n",
+    "\n",
+    "복리의 횟수가 많을수록 복리 효과가 커져 수익률은 늘어난다.\n",
+    "\n",
+    "복리 횟수(N)가 늘어날수록 값은 오일러상수($e$)에 수렴함"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 연속 복리 = 원금 $\\times$ $e^r$\n",
+    "\n",
+    "$where$ $e \\approx\\ 2.71828...$"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 34,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import math"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 40,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# 원금, 이율 셋팅\n",
+    "amount = 10**6\n",
+    "rate = 0.1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 41,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1100000.0\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 복리 기간이 1인 경우 (1년 기준)\n",
+    "n = 1\n",
+    "c_compound = amount*(1+rate/n)**n\n",
+    "print(c_compound)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 42,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1102500.0\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 복리 기간이 2인 경우 (반년 기준)\n",
+    "n = 2\n",
+    "c_compound = amount*(1+rate/n)**n\n",
+    "print(c_compound)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 43,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1103812.8906249995\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 복리 기간이 4인 경우 (분기 기준)\n",
+    "n = 4\n",
+    "c_compound = amount*(1+rate/n)**n\n",
+    "print(c_compound)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 45,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1104713.0674412968\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 복리 기간이 !2인 경우 (월 기준)\n",
+    "n = 12\n",
+    "c_compound = amount*(1+rate/n)**n\n",
+    "print(c_compound)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 46,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1105155.7816162326\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 복리 기간이 365인 경우 (일 기준)\n",
+    "n = 365\n",
+    "c_compound = amount*(1+rate/n)**n\n",
+    "print(c_compound)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 47,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1105170.2872745614\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 복리 기간이 8760인 경우 (매시간 기준)\n",
+    "n = 8760\n",
+    "c_compound = amount*(1+rate/n)**n\n",
+    "print(c_compound)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "위와 같이, 복리 횟수가 늘어날수록 복리의 값은 오일러상수에 근접하게 됨"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.7.2"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
