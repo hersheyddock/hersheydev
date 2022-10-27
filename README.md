@@ -1,8 +1,10 @@
 ## Dev Study Log (since 2021)
 개발, 데이터 관련 학습 기록을 적어둔 포트폴리오 repo입니다. 
 
+## Fundaemental 기르기
 ### Computer Science
 * 자료구조/알고리즘
+* 데이터베이스
 * 객체지향 프로그래밍
 * 기계학습
 
