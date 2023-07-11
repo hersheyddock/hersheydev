@@ -1,5 +1,5 @@
-## Dev Study Log (since 2021)
-개발, 데이터 관련 학습 기록을 적어둔 포트폴리오 repo입니다. 
+## Data Study Log (since 2021)
+데이터 관련 학습 기록을 적어둔 포트폴리오 repo입니다. 
 
 ## Fundamental 기르기
 ### Computer Science
